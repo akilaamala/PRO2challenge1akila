@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Interplanetary Transport System Interface</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles_itsi.css">
+			<script src="script/main_itsi.js"></script>
+			<link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+<style>
+	body {
+		background-color: #A9A9A9; 
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="nav-title">
+			Interplanetary Transport System Interface </div>
+	</div> 
+
+<div id="parameters" class="containers">
+	<div class="section-title">
+		Ship Parameters	</div>
+
+		<div class="card-title">Fuel</div>
+		<div class="card-body" id="fuel"></div>
+		<input id='fuel-value'  type="text" disabled="true">
+    
+
+		<div class="card-title">Throttle</div>
+		<div class="card-body" id="throttle"></div>
+		<input id='throttle-value'  type="text" placeholder="enter text">
+        <button onclick="calculate()" >submit</button>
+
+
+		<div class="card-title">Speed</div>
+		<div class="card-body" id="speed"></div>
+		<input id='speed-value'  type="text" disabled="true">
+    
+
+	<div class="section-title">
+		Ship Environment </div>
+
+		<div class="card-title">Gravity</div>
+		<div class="card-body" id="gravity"></div>
+
+		<div class="card-title">Distance Traveled</div>
+		<div class="card-body" id="distance-traveled"></div>
+
+		<div class="card-title">Atmosphere</div>
+		<div class="card-body" id="atmosphere"></div>
+
+	<div class="section-title">
+		Ship Supplies </div>
+
+		<div class="card-title">Days Left</div>
+		<div class="card-body" id="days"></div>
+		<input id='days-left'  type="text" disabled="true">
+
+		<div class="card-title">Food</div>
+		<div class="card-body" id="food"></div>
+		<input id='food-value' value="100" type="text" disabled="true">
+
+
+		<div class="card-title">Water</div>
+		<div class="card-body" id="water"></div>
+		<input id='water-value' value="100" type="text" disabled="true">
+        </div>
+<button onclick="checkSupplies()" >check supplies</button>
+
+
+	<div class="section-title">
+		Metrics </div>
+
+		<div class="card-title">Gravity Converter</div>
+		<div class="card-body" id="gravityconverter"></div>
+		<input id='planet-mass' type="text" placeholder="enter mass of planet"> <span>Kg</span>
+		<input id='distance-value' type="text"> <span>M</span>
+		<input id='gravity-value' type="text" disabled="true"> <span>N</span>
+		<button onclick="gravityConverter()" >convert</button>
+
+
+	
+
+
+</html>
+
+
