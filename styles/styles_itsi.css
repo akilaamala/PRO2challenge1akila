@@ -3,3 +3,19 @@ body{
 	color: #FFFFFF;
 	margin: 0;
 }
+
+.nav-title{
+	background-color: #50A89C;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 12px;
+
+}
+
+.section-title{
+	font-size: 20px;
+	font-weight: 800;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+}
