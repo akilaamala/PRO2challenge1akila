@@ -26,9 +26,7 @@ function checkSupplies (){
 }
 
 function gravityConverter (){
-let mass1 = document.getElementById('planet-mass').value;
-let distance = document.getElementById('distance-value').value;
-let massEarth = Math.pow (5.972,24);
-let gCons = Math.pow (6.673,-11);
-document.getElementById('gravity-value').value = gCons * massEarth * Number (mass1) / (Number (distance) * Number (distance)); 
-}
+    let mass1 = document.getElementById('planet-mass').value;
+    let distance = document.getElementById('distance-value').value;
+    document.getElementById('gravity-value').value = Number(mass1) * Number(distance); 
+    }
